@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+
+//logo
+const background = require('./assets/clarifaiLogo.jpg');
+
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Image source={background} style={styles.img} />
       <StatusBar style="auto" />
     </View>
   );
@@ -16,5 +21,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  imgcontainer: {
+    alignContent: 'center',
+    
+  },
+
+  img: {
+
   },
 });
